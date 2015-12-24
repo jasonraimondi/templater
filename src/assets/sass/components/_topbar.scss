@@ -1,8 +1,8 @@
-  @include foundation-dropdown;
-  @include foundation-dropdown-menu;
-  // @include foundation-menu;
-  @include foundation-title-bar;
-  @include foundation-top-bar;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+// @include foundation-menu;
+@include foundation-title-bar;
+@include foundation-top-bar;
 
 .menu {
   @include menu-base;
@@ -23,6 +23,7 @@
 .top-bar-left {
   float: left;
 }
+
 .top-bar-right {
   float: right;
 }

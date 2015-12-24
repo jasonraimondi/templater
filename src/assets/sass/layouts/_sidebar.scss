@@ -7,7 +7,6 @@
 
   > section {
     flex: 3 1 auto;
-    background-color: red;
   }
 
   > aside {
@@ -39,7 +38,7 @@
 
     @each $breakpoint, $gutter in $grid-column-responsive-gutter {
       @include breakpoint($breakpoint) {
-        margin-bottom: rem-calc($gutter) / 2;;
+        margin-bottom: rem-calc($gutter) / 2;
       }
     }
   }
