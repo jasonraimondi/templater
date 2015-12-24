@@ -1,0 +1,23 @@
+{
+  "name": "templater",
+  "description": "HTML Template Builder",
+  "authors": [
+    "Jason Raimondi"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "keywords": [
+    "html",
+    "template",
+    "builder"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ]
+}
