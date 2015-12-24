@@ -1,0 +1,48 @@
+extends ../layouts/full-width.jade
+
+block content
+  section.styleguide
+    header
+      h3 Buttons
+    article.style-buttons
+      div
+        h4 Sizes
+        div
+          a.button.tiny Tiny Button
+        div
+          a.button.small Small Button
+        div
+          a.button Normal Button
+        div
+          a.button.large Large Button
+        div
+          a.button.expanded Button Expanded
+          
+      div
+        h4 Colors
+        div
+          a.button Primary Button
+        div
+          a.button.secondary Secondary Button
+        div
+          a.button.success Success Button
+        div
+          a.button.alert Alert Button
+        div
+          a.button.warning Warning Button
+          
+          
+  section.styleguide
+    header
+      h3 Forms
+    article.style-forms
+      div
+        h4 Sizes
+        div
+          label First Name
+            input(type="text", placeholder="First Name")
+          label First Name
+            input(type="text", placeholder="First Name")
+          select
+            each book, i in ["A", "B", "C"]
+              option(value=i) Book #{book}
