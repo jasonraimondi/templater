@@ -2,6 +2,7 @@
 
 var argv = require('yargs').argv;
 var autoprefixer = require('gulp-autoprefixer');
+var browser = require('browser-sync');
 var fs = require('fs');
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
@@ -25,6 +26,9 @@ var PREFIXES = [
 
 // Compiles Sass files into CSS
 gulp.task('sass', ['sass:style']);
+
+// Watch Task
+gulp.task('watch:sass', ['sass'], browser.reload);
 
 // Compiles Site Sass
 gulp.task('sass:style', function() {
