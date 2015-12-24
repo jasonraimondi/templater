@@ -1,0 +1,19 @@
+// @mixin bg-color($color) {
+//     background-color: scale-color($color, $lightness: 25%, $saturation: -15%) !important;
+// }
+// .notice,
+// .info {
+//     @include bg-color($primary-color);
+// }
+// .warning {
+//     @include bg-color($warning-color);
+// }
+// .alert,
+// .critical,
+// .emergency,
+// .error {
+//     @include bg-color($alert-color);
+// }
+// .debug {
+//     @include bg-color($secondary-color);
+// }

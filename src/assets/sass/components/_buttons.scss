@@ -1,0 +1,41 @@
+.button {
+
+  @include button(
+    $expand: false,
+    $background: $button-background,
+    $background-hover: $button-background-hover,
+    $color: $button-color,
+    $style: solid
+  );
+
+  margin: 0;
+  border-radius: $global-radius;
+
+
+  &.tiny {
+    padding: (map-get($button-sizes, tiny) / 2);
+    font-size: map-get($button-sizes, tiny);
+  }
+
+  &.small {
+    padding: (map-get($button-sizes, small) / 2);
+    font-size: map-get($button-sizes, small);
+  }
+
+  &.large {
+    padding: (map-get($button-sizes, large) / 2);
+    font-size: map-get($button-sizes, large);
+  }
+
+  &.expanded {
+    @include button-expand;
+  }
+
+  // Colors
+  @each $name,
+  $color in $foundation-colors {
+    &.#{$name} {
+      @include button-style($color, auto, auto);
+    }
+  }
+}

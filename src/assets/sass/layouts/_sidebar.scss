@@ -1,0 +1,46 @@
+.blog {
+  flex-direction: column;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+  }
+
+  > section {
+    flex: 3 1 auto;
+    background-color: red;
+  }
+
+  > aside {
+    flex: 1;
+    background-color: $secondary-color;
+
+    &.right { order: 1; }
+    &.left { order: -1; }
+
+  }
+}
+
+.sidebar {
+  list-style-type: none;
+  margin: 0;
+
+  @each $breakpoint, $gutter in $grid-column-responsive-gutter {
+    $padding: rem-calc($gutter) / 2;
+
+    @include breakpoint($breakpoint) {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+  }
+
+
+  .me img {
+    border-radius: 999px;
+
+    @each $breakpoint, $gutter in $grid-column-responsive-gutter {
+      @include breakpoint($breakpoint) {
+        margin-bottom: rem-calc($gutter) / 2;;
+      }
+    }
+  }
+}

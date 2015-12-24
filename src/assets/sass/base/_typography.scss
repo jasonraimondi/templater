@@ -1,0 +1,11 @@
+@include foundation-typography-base;
+@include foundation-typography-helpers;
+
+// @include foundation-text-alignment;
+// @include foundation-print-styles;
+
+@each $alignment in center, left, right, justify {
+  .text-#{$alignment} {
+    text-align: $alignment;
+  }
+}
