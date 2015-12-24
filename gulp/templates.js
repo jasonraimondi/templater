@@ -18,6 +18,6 @@ gulp.task('templates', function() {
       pretty: true
     }))
     .pipe(gulpif(argv.production, minifyHTML(OPTS)))
-    .pipe(gulp.dest('./dist/templates'))
+    .pipe(gulp.dest('./dist'))
 
 });
