@@ -32,6 +32,6 @@ gulp.task('browserify', function() {
     // Add transformation tasks to the pipeline here.
     .pipe(gulpif(argv.production, uglify()))
     .on('error', gutil.log)
-    .pipe(sourcemaps.write('./'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist/assets/js'));
 });
