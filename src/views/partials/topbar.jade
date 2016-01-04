@@ -10,16 +10,7 @@ nav#js-menu-toggle.top-bar
           a(href='#') Link
   div.top-bar-right
     ul.menu
-      li
-        a(href='#') Link
-      li
-        a(href='#') Link
-      li
-        a(href='#') Link
-      li
-        a(href='#') Link
-      li
-        a(href='#') Link
-      li
-        a(href='#') Link
+      each book, i in ['auth', 'blog', 'index', 'styleguide']
+        li
+          a(href='/pages/#{book}.html') #{book}
 

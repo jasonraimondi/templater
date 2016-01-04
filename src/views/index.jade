@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    include partials/head.jade
+  body
+
+      header
+        h1 Pages
+
+      main
+        ul
+          each book, i in ['auth', 'blog', 'index', 'styleguide']
+            li
+              a(href='/pages/#{book}.html') #{book}
+
+      footer
+        include partials/footer.jade
+
+    include partials/scripts.jade
+
